@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/zhifeiji"
+                android:layout_width="90dp"
+                android:layout_height="50dp"/>
+
+            <EditText
+                android:id="@+id/research"
+                android:layout_weight="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入想要查询的地区" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:text="查询"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/fengzheng"
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="位置"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/jiandan"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:layout_weight="100"
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="温度"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/paopao"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:layout_weight="100"
+                    android:id="@+id/humi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="湿度"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/yuncai"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:layout_weight="100"
+                    android:id="@+id/weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天气"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Air"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#B9F6EE"
+            android:text="空气质量"></TextView>
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B9F6EE"
+            android:layout_alignBottom="@+id/Air"
+
+            android:text="账号密码"></TextView>
+        <LinearLayout
+            android:id="@+id/button_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_loginactivity_button"
+                android:text="back"></Button>
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_loginactivity_button"
+                android:text="next"></Button>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE3E8">
+    <LinearLayout
+        android:id="@+id/first_lin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="温度:"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/Temperature"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:text="湿度:"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/Humidity"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="开始获取"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="600dp" />
+
+            <Button
+                android:id="@+id/button_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="清除内容"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="600dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/led_on"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="开灯"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="600dp" />
+
+            <EditText
+                android:id="@+id/led_con"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="3">
+            </EditText>
+            <ImageView
+                android:id="@+id/led_status"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp" />
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/led_off"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="30dp"
+                android:text="关灯"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="600dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/text_log"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#09D7AC"
+                android:hint="日志打印"
+                android:inputType="textMultiLine"
+                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/text_tempH"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                    </EditText>
+                    <Button
+                        android:id="@+id/button_tempH"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="温度阈值设置">
+
+                    </Button>
+                </LinearLayout>
+                 <Button
+                    android:id="@+id/button_back"
+                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="back"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
